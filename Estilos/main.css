@@ -35,7 +35,11 @@
             background-color: #D44B4C; }
         .Barra #menu li .active {
           background-color: #CB0B0D;
-          height: 3em; } }
+          height: 3em; }
+
+  .Cuerpo {
+    background-color: black;
+    color: white; } }
 @media (max-device-width: 480px) {
   .Barra {
     height: 120px;
