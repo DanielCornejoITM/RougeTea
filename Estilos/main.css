@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 2560px) {
   .Barra {
     background-color: #8C0708;
     float: left;
@@ -66,7 +66,7 @@
         width: 50%;
         float: left;
         position: relative; } }
-@media (max-device-width: 480px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 425px) {
   .Barra {
     height: 120px;
     width: 100%;
@@ -135,7 +135,7 @@
     color: white;
     width: 100%;
     font-size: 4em; } }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media (min-device-width: 425px) and (max-device-width: 1023px) {
   .Barra {
     font-size: 2.5em;
     background-color: #8C0708;
