@@ -30,7 +30,7 @@ $(window).on('resize', function(){
 		icono.removeClass('fa-bars');
 	}else{
 		enlaces.hide;
-				iconos.addClass('fa-bars');
+				icono.addClass('fa-bars');
 		icono.removeClass('fa-times');
 	}
 });
