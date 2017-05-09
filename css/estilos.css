@@ -87,6 +87,13 @@ main{
 .imagen1{
 	width: 100%;
 	height: 500px;
+	background-image: url("../img/te1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 
 }
 .imagen1 img{
@@ -94,8 +101,37 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+}
+.imagen1 .boton1{
+	width: 15%;
+	height: 10%;
+	font-size: 1em;
+	background: #DE3B3F;
+	border-color: #DE3B3F;
+	color: #fff;
+	margin: 30px auto;
+	border-width: 0;
+	outline: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	transition: background-color .3s;
+
+
 }
 
+.boton1:hover, .boton1:focus {
+  background-color: #530002;
+}
+
+.Promociones{
+background-color: blue;
+height: 200px;
+width: 100%;}
+.LoNuevo{
+background-color: red;
+height: 200px;
+width: 100%}
 
 
 @media screen and  (max-width: 768px){
@@ -120,6 +156,29 @@ main{
 		flex-wrap: wrap;
 		justify-content: space-around;
 	}
+
+.imagen1 .boton1{
+	width: 40%;
+	height: 10%;
+	font-size: 2em;
+	background: #DE3B3F;
+	border-color: #DE3B3F;
+	color: #fff;
+	margin: 30px auto;
+	border-width: 0;
+	outline: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	transition: background-color .3s;
+
+
+}
+.boton1:hover, .boton1:focus {
+  background-color: #530002;
+}
+
+
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -136,6 +195,26 @@ main{
 	width: 100%;
 	
 }
+
+.imagen1 .boton1{
+	width: 50%;
+	height: 10%;
+	font-size: 1.5em;
+	background: #DE3B3F;
+	border-color: #DE3B3F;
+	color: #fff;
+	margin: 30px auto;
+	border-width: 0;
+	outline: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	transition: background-color .3s;
+
+}
+.boton1:hover, .boton1:focus {
+  background-color: #530002;
+}
+
 
 
 }
