@@ -284,10 +284,10 @@ h1.TituloA {
         align-items: center;
     }
     .Caja {
-        width: 40%;
-        height: 200px;
-        background-color: #A10206;
-        margin: 10px;
+        width: 48%;
+        height: 250px;
+        background-color: #F90906;
+        margin: 2px;
     }
     .Clientes,
     .Suscripcion {
@@ -297,30 +297,30 @@ h1.TituloA {
         margin: 1px;
     }
     .Suscripcion input[type="text"] {
-    width: 300px;
-    height: 30px;
-}
-.Suscripcion input[type="submit"] {
-    width: 25%;
-    height: 15%;
-    font-size: 1.5em;
-    background: #DE3B3F;
-    border-color: #DE3B3F;
-    color: #fff;
-    margin: 30px auto;
-    border-width: 0;
-    outline: none;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-    transition: background-color .3s;
-}
-.Suscripcion input[type="submit"]:hover,
-.Suscripcion input[type="submit"]:focus {
-    background-color: #530002;
-}
+        width: 300px;
+        height: 30px;
+    }
+    .Suscripcion input[type="submit"] {
+        width: 25%;
+        height: 15%;
+        font-size: 1.5em;
+        background: #DE3B3F;
+        border-color: #DE3B3F;
+        color: #fff;
+        margin: 30px auto;
+        border-width: 0;
+        outline: none;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        transition: background-color .3s;
+    }
+    .Suscripcion input[type="submit"]:hover,
+    .Suscripcion input[type="submit"]:focus {
+        background-color: #530002;
+    }
     .Suscripcion h2 {
-    font-size: 2em;
-    text-align: center;
-    color: #fff;
-}
+        font-size: 2em;
+        text-align: center;
+        color: #fff;
+    }
 }
