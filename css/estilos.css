@@ -1,220 +1,326 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-	background: #f2f2f2;
-	font-family: 'Nunito Sans', sans-serif;
-	font-size: 16px;
-	padding-top: 55px;
+body {
+    background: #f2f2f2;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 55px;
 }
-header{
-	background: #fff;
-	position: fixed;
-	width: 100%;
-	top:0;
+header {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
-.menu{
-
-	width: 90%;
-	max-width: 1000px;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+.menu {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-.menu .logo{
-	display: inline-block;
-	margin-right: 1em;
+.menu .logo {
+    display: inline-block;
+    margin-right: 1em;
 }
-.menu. .logo img{
-	vertical-align:top;
-	height: 22px;
+.menu. .logo img {
+    vertical-align: top;
+    height: 22px;
 }
-
-.menu .btn-menu{
-	display: none;
-	color: #A10206;
-	text-decoration: none;
-	font-size: 1em;
+.menu .btn-menu {
+    display: none;
+    color: #A10206;
+    text-decoration: none;
+    font-size: 1em;
 }
 .menu .logo:hover {
-	background: #fff;
+    background: #fff;
 }
-.menu .enlaces{
-	display: inline-block;
-	text-align: right;
+.menu .enlaces {
+    display: inline-block;
+    text-align: right;
 }
-
-.menu .enlaces a{
-	color: #CC1015;
-	text-decoration:none;
-	display: inline-block;
-	padding: 1em;
-	text-align: center;
-	font-size: 1em;
+.menu .enlaces a {
+    color: #CC1015;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
 }
-.menu .enlaces a:hover{
-	background: #A10206;
-	color: #fff;
+.menu .enlaces a:hover {
+    background: #A10206;
+    color: #fff;
 }
-.menu .enlaces i{
-	margin-right: 5px;
-
+.menu .enlaces i {
+    margin-right: 5px;
 }
-
-.headroom{
-	transition: transform .3s ease;
+.headroom {
+    transition: transform .3s ease;
 }
-.headroom--pinned{
-	transform: translateY(0%);
+.headroom--pinned {
+    transform: translateY(0%);
 }
-.headroom--unpinned{
-	transform: translateY(-100%);
+.headroom--unpinned {
+    transform: translateY(-100%);
 }
-
-main{
-	width: 90%;
-
-	margin: 20px auto;
-	padding: 20px;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0,75);
-	
-
+main {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0, 75);
 }
-.imagen1{
-	width: 100%;
-	height: 500px;
-	background-image: url("../img/te1.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-
+.imagen1 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/te1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.imagen1 img{
-
+.imagen1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
-.imagen1 .boton1{
-	width: 15%;
-	height: 10%;
-	font-size: 1em;
-	background: #DE3B3F;
-	border-color: #DE3B3F;
-	color: #fff;
-	margin: 30px auto;
-	border-width: 0;
-	outline: none;
-	border-radius: 2px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-	transition: background-color .3s;
-
-
+.imagen1 .boton1 {
+    width: 15%;
+    height: 10%;
+    font-size: 1em;
+    background: #DE3B3F;
+    border-color: #DE3B3F;
+    color: #fff;
+    margin: 30px auto;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    transition: background-color .3s;
 }
-
-.boton1:hover, .boton1:focus {
-  background-color: #530002;
+.boton1:hover,
+.boton1:focus {
+    background-color: #530002;
 }
-
-.Promociones{
-background-color: blue;
-height: 200px;
-width: 100%;}
-.LoNuevo{
-background-color: red;
-height: 200px;
-width: 100%}
-
-
-@media screen and  (max-width: 768px){
-
-	header .menu{
-		flex-direction: column;
-	}
-	header .menu .logo{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		width: 100%;
-		padding: 1em;
-	}
-	header .menu .logo .btn-menu{
-		display: inline-block;
-	}
-	header .menu .enlaces{
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-
-.imagen1 .boton1{
-	width: 40%;
-	height: 10%;
-	font-size: 2em;
-	background: #DE3B3F;
-	border-color: #DE3B3F;
-	color: #fff;
-	margin: 30px auto;
-	border-width: 0;
-	outline: none;
-	border-radius: 2px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-	transition: background-color .3s;
-
-
+.Promociones,
+.LoNuevo {
+    height: 200px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
-.boton1:hover, .boton1:focus {
-  background-color: #530002;
+.Caja {
+    width: 20%;
+    height: 80%;
+    background-color: #A10206;
+    margin: 10px;
 }
-
-
-
+h1.TituloA {
+    text-align: center;
 }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-header .menu .enlaces{
-flex-direction: column;
- }
- .menu. .logo img{
-	vertical-align:top;
-	height: 50px;
+.Opiniones {
+    height: 300px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
-
-main{
-	width: 100%;
-	
+.Clientes,
+.Suscripcion {
+    width: 49%;
+    height: 95%;
+    background-color: #A10206;
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
-
-.imagen1 .boton1{
-	width: 50%;
-	height: 10%;
-	font-size: 1.5em;
-	background: #DE3B3F;
-	border-color: #DE3B3F;
-	color: #fff;
-	margin: 30px auto;
-	border-width: 0;
-	outline: none;
-	border-radius: 2px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-	transition: background-color .3s;
-
+.OP {
+    width: 49%;
+    height: 99%;
+    background-color: #fff;
+    margin: 1px;
 }
-.boton1:hover, .boton1:focus {
-  background-color: #530002;
+.Suscripcion h2 {
+    text-align: center;
+    color: #fff;
 }
+.Suscripcion input[type="text"] {
+    width: 500px;
+    height: 30px;
+}
+.Suscripcion input[type="submit"] {
+    width: 25%;
+    height: 15%;
+    font-size: 1.5em;
+    background: #DE3B3F;
+    border-color: #DE3B3F;
+    color: #fff;
+    margin: 30px auto;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    transition: background-color .3s;
+}
+.Suscripcion input[type="submit"]:hover,
+.Suscripcion input[type="submit"]:focus {
+    background-color: #530002;
+}
+/*Tabletas*/
 
+@media screen and (max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+    }
+    header .menu .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1em;
+    }
+    header .menu .logo .btn-menu {
+        display: inline-block;
+    }
+    header .menu .enlaces {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .imagen1 .boton1 {
+        width: 40%;
+        height: 10%;
+        font-size: 2em;
+        background: #DE3B3F;
+        border-color: #DE3B3F;
+        color: #fff;
+        margin: 30px auto;
+        border-width: 0;
+        outline: none;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        transition: background-color .3s;
+    }
+    .boton1:hover,
+    .boton1:focus {
+        background-color: #530002;
+    }
+    .Promociones,
+    .LoNuevo {
+        flex-direction: row;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Caja {
+        width: 130px;
+        height: 150px;
+        background-color: #A10206;
+        margin: 10px;
+    }
+}
+/*Celulares*/
 
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header .menu .enlaces {
+        flex-direction: column;
+    }
+    .menu. .logo img {
+        vertical-align: top;
+        height: 50px;
+    }
+    main {
+        width: 100%;
+    }
+    .imagen1 .boton1 {
+        width: 50%;
+        height: 10%;
+        font-size: 1.5em;
+        background: #DE3B3F;
+        border-color: #DE3B3F;
+        color: #fff;
+        margin: 30px auto;
+        border-width: 0;
+        outline: none;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        transition: background-color .3s;
+    }
+    .boton1:hover,
+    .boton1:focus {
+        background-color: #530002;
+    }
+    .Promociones,
+    .LoNuevo {
+        height: 800px;
+        flex-direction: row;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .Caja {
+        width: 40%;
+        height: 200px;
+        background-color: #A10206;
+        margin: 10px;
+    }
+    .Clientes,
+    .Suscripcion {
+        width: 100%;
+        height: 95%;
+        background-color: #A10206;
+        margin: 1px;
+    }
+    .Suscripcion input[type="text"] {
+    width: 300px;
+    height: 30px;
+}
+.Suscripcion input[type="submit"] {
+    width: 25%;
+    height: 15%;
+    font-size: 1.5em;
+    background: #DE3B3F;
+    border-color: #DE3B3F;
+    color: #fff;
+    margin: 30px auto;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    transition: background-color .3s;
+}
+.Suscripcion input[type="submit"]:hover,
+.Suscripcion input[type="submit"]:focus {
+    background-color: #530002;
+}
+    .Suscripcion h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+}
 }
