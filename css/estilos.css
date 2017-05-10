@@ -321,7 +321,7 @@ h1.TituloA {
     }
     .Suscripcion input[type="submit"]:hover,
     .Suscripcion input[type="submit"]:focus {
-        background-color: #530002;
+        background-color: #530F02;
     }
     .Suscripcion h2 {
         font-size: 2em;
