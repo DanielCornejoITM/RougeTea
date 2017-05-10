@@ -297,7 +297,7 @@ h1.TituloA {
     .Clientes,
     .Suscripcion {
         width: 100%;
-        height: 95%;
+        height: 280px;;
         background-color: #A10206;
         margin: 1px;
     }
@@ -327,5 +327,8 @@ h1.TituloA {
         font-size: 2em;
         text-align: center;
         color: #fff;
+    }
+    .Opiniones{
+        height: 560px;
     }
 }
