@@ -168,7 +168,7 @@ h1.TituloA {
     color: #fff;
 }
 .Suscripcion input[type="text"] {
-    width: 500px;
+    width: 300px;
     height: 30px;
 }
 .Suscripcion input[type="submit"] {
@@ -247,7 +247,7 @@ h1.TituloA {
         margin: 10px;
     }
     .Suscripcion input[type="text"] {
-        width: 200px;
+        width: 100%;
         height: 30px;
     }
     .Suscripcion input[type="submit"] {
