@@ -1,123 +1,290 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
 }
+
 footer {
-    height: 100px;
-    width: 100%;
-    background: yellow;
+  height: 100px;
+  width: 100%;
+  background: #A10206;
 }
+
 body {
-    background: #f2f2f2;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 16px;
-    padding-top: 55px;
+  background: #fff;
+  font-family: 'Mogra', cursive;
+  font-size: 16px;
+  padding-top: 55px;
 }
+
 header {
-    background: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
+
 .menu {
-    width: 99%;
-    max-width: 1000px;
-    margin: auto;
+  width: 99%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .logo {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.menu. .logo img {
+  vertical-align: top;
+  height: 22px;
+}
+
+.menu .btn-menu {
+  display: none;
+  color: #A10206;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.menu .logo:hover {
+  background: #fff;
+}
+
+.menu .enlaces {
+  display: inline-block;
+  text-align: center;
+}
+.menu .enlaces a:hover ,.active{
+  background: #F76266;
+  color: #fff;
+}
+
+.menu .enlaces a {
+  color: #CC1015;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+}
+
+
+.menu .enlaces i {
+  margin-right: 5px;
+}
+
+.headroom {
+  transition: transform .3s ease;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+main {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0, 75);
+}
+
+.imagen1 {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/Diner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.imagen1 .boton1 {
+  width: 15%;
+  height: auto;
+  font-size: 30px;
+  background: #fff;
+  border-color: #fff;
+  color: #DE3B3F;
+  margin: 30px auto;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  transition: background-color .3s;
+}
+
+.boton1:hover, .boton1:focus {
+  background-color: #DE3B3F;
+  color: #fff;
+}
+
+.Promociones, .LoNuevo {
+  height: 200px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Caja {
+  width: 20%;
+  height: auto;
+  background-color: #BE1A1E;
+  margin: 10px;
+}
+
+.Caja img {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  background-repeat: no-repeat;
+}
+
+.Caja a, .Caja * {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+h1.TituloA {
+  text-align: center;
+font-size: 3em;
+color: #BE1A1E;
+  font-family: 'Lobster Two', cursive;
+}
+
+.Opiniones {
+  height: 300px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.Suscripcion{
+  background-color: #BE1A1E;
+}
+
+.Clientes, .Suscripcion {
+  width: 49%;
+  height: 95%;
+  margin: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.chatop{
+  width: auto;
+  height: 40%;
+  text-align: center;
+}
+.OP1,.OP2 {
+  width: 49%;
+  height: 99%;
+  border-style: solid;
+  border-color: #BE1A1E;
+  text-align: center;
+}
+
+.Suscripcion h2,h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.Suscripcion input[type="text"],.Suscripcion input[type="email"] {
+  width: 550px;
+  height: 15%;
+  font-size: 40px;
+  border: none;
+  background: #BE1A1E;
+  border-bottom: 2px solid #F76266;
+  color: white;
+}
+
+.Suscripcion input[type="submit"] {
+  width: 45%;
+  height: 15%;
+  font-size: 1.5em;
+  background: #DE3B3F;
+  border-color: #DE3B3F;
+  color: #fff;
+  margin: 30px auto;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  transition: background-color .3s;
+}
+
+.Suscripcion input[type="submit"]:hover, .Suscripcion input[type="submit"]:focus {
+  background-color: #530002;
+}
+
+
+/*Tabletas*/
+
+@media screen and (max-width: 768px) {
+  header .menu {
+    flex-direction: column;
+  }
+  header .menu .logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-}
-.menu .logo {
-    display: inline-block;
-    margin-right: 1em;
-}
-.menu. .logo img {
-    vertical-align: top;
-    height: 22px;
-}
-.menu .btn-menu {
-    display: none;
-    color: #A10206;
-    text-decoration: none;
-    font-size: 1em;
-}
-.menu .logo:hover {
-    background: #fff;
-}
-.menu .enlaces {
-    display: inline-block;
-    text-align: right;
-}
-.menu .enlaces a {
-    color: #CC1015;
-    text-decoration: none;
-    display: inline-block;
-    padding: 1em;
-    text-align: center;
-    font-size: 1em;
-}
-.menu .enlaces a:hover {
-    background: #A10206;
-    color: #fff;
-}
-.menu .enlaces i {
-    margin-right: 5px;
-}
-.headroom {
-    transition: transform .3s ease;
-}
-.headroom--pinned {
-    transform: translateY(0%);
-}
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
-main {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0, 75);
-}
-.imagen1 {
     width: 100%;
-    height: 500px;
-    background-image: url("../img/te1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    padding: 1em;
+  }
+  header .menu .logo .btn-menu {
+    display: inline-block;
+  }
+  header .menu .enlaces {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.imagen1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.imagen1 .boton1 {
-    width: 15%;
-    height: 10%;
-    font-size: 1em;
-    background: #DE3B3F;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .imagen1 .boton1 {
+    width: 40%;
+    height: auto;
+    font-size: 2em;
+    background: #fff;
     border-color: #DE3B3F;
-    color: #fff;
+    color: #DE3B3F;
     margin: 30px auto;
     border-width: 0;
     outline: none;
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
     transition: background-color .3s;
-}
-.boton1:hover,
-.boton1:focus {
-    background-color: #530002;
-}
-.Promociones,
-.LoNuevo {
-    height: 200px;
-    width: 100%;
+  }
+  .boton1:hover, .boton1:focus {
+    background-color: #DE3B3F;
+    color: #fff;
+  }
+  .Promociones, .LoNuevo {
     flex-direction: row;
     display: flex;
     display: -webkit-flex;
@@ -125,54 +292,100 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-}
-.Caja {
-    width: 20%;
-    height: 80%;
+  }
+  .Caja {
+    width: 130px;
     background-color: #A10206;
     margin: 10px;
-}
-h1.TituloA {
+    font-size: 90%;
+  }
+
+  .Caja a, .Caja * {
+    text-decoration: none;
+    color: #fff;
     text-align: center;
+  }
+  .Suscripcion h1,.Suscripcion h2{
+    font-size: 150%;
+  }
+  .Suscripcion input[type="text"],  .Suscripcion input[type="email"] {
+    width: 300px;
+    height: 30px;
+    font-size: 150%;
+    border: none;
+    background: #BE1A1E;
+    border-bottom: 2px solid #F76266;
+    color: white;
+  }
+  }
+  .Suscripcion input[type="submit"] {
+    width: 200px;
+  }
 }
-.Opiniones {
+
+
+/*Celulares*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header .menu .enlaces {
+    flex-direction: column;
+  }
+  .menu. .logo img {
+    vertical-align: top;
+    height: 50px;
+  }
+  .imagen1{
     height: 300px;
+  }
+  main {
     width: 100%;
+  }
+  .imagen1 .boton1 {
+    width: 50%;
+    height:auto;
+    font-size: 1.5em;
+    background: #fff;
+    border-color: #fff;
+    color: #DE3B3F;
+    margin: 30px auto;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    transition: background-color .3s;
+  }
+  .boton1:hover, .boton1:focus {
+    background-color: #DE3B3F;
+    color: #fff;
+  }
+  .Promociones, .LoNuevo {
+    height: 800px;
     flex-direction: row;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-}
-.Clientes,
-.Suscripcion {
-    width: 49%;
-    height: 95%;
+  }
+  .Caja {
+    width: 48%;
+    height: 250px;
+    background-color: #F90906;
+    margin: 2px;
+  }
+  .Clientes, .Suscripcion {
+    width: 100%;
+    height: 280px;
+    ;
     background-color: #A10206;
     margin: 1px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-.OP {
-    width: 49%;
-    height: 99%;
-    background-color: #fff;
-    margin: 1px;
-}
-.Suscripcion h2 {
-    text-align: center;
-    color: #fff;
-}
-.Suscripcion input[type="text"] {
+  }
+  .Suscripcion input[type="text"] {
     width: 250px;
     height: 30px;
-}
-.Suscripcion input[type="submit"] {
-    width: 25%;
+  }
+  .Suscripcion input[type="submit"] {
+    width: 50%;
     height: 15%;
     font-size: 1.5em;
     background: #DE3B3F;
@@ -184,159 +397,29 @@ h1.TituloA {
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
     transition: background-color .3s;
-}
-.Suscripcion input[type="submit"]:hover,
-.Suscripcion input[type="submit"]:focus {
-    background-color: #530002;
-}
-/*Tabletas*/
-
-@media screen and (max-width: 768px) {
-    header .menu {
-        flex-direction: column;
-    }
-    header .menu .logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        padding: 1em;
-    }
-    header .menu .logo .btn-menu {
-        display: inline-block;
-    }
-    header .menu .enlaces {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .imagen1 .boton1 {
-        width: 40%;
-        height: 10%;
-        font-size: 2em;
-        background: #DE3B3F;
-        border-color: #DE3B3F;
-        color: #fff;
-        margin: 30px auto;
-        border-width: 0;
-        outline: none;
-        border-radius: 2px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-        transition: background-color .3s;
-    }
-    .boton1:hover,
-    .boton1:focus {
-        background-color: #530002;
-    }
-    .Promociones,
-    .LoNuevo {
-        flex-direction: row;
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .Caja {
-        width: 130px;
-        height: 150px;
-        background-color: #A10206;
-        margin: 10px;
-    }
-    .Suscripcion input[type="text"] {
-        width: 300px;
-        height: 30px;
-    }
-    .Suscripcion input[type="submit"] {
-        width: 200px;
-    }
-    
-}
-/*Celulares*/
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    header .menu .enlaces {
-        flex-direction: column;
-    }
-    .menu. .logo img {
-        vertical-align: top;
-        height: 50px;
-    }
-    main {
-        width: 100%;
-    }
-    .imagen1 .boton1 {
-        width: 50%;
-        height: 10%;
-        font-size: 1.5em;
-        background: #DE3B3F;
-        border-color: #DE3B3F;
-        color: #fff;
-        margin: 30px auto;
-        border-width: 0;
-        outline: none;
-        border-radius: 2px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-        transition: background-color .3s;
-    }
-    .boton1:hover,
-    .boton1:focus {
-        background-color: #530002;
-    }
-    .Promociones,
-    .LoNuevo {
-        height: 800px;
-        flex-direction: row;
-        display: flex;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .Caja {
-        width: 48%;
-        height: 250px;
-        background-color: #F90906;
-        margin: 2px;
-    }
-    .Clientes,
-    .Suscripcion {
-        width: 100%;
-        height: 280px;;
-        background-color: #A10206;
-        margin: 1px;
-    }
-    .Suscripcion input[type="text"] {
-        width: 250px;
-        height: 30px;
-    }
-    .Suscripcion input[type="submit"] {
-        width: 50%;
-        height: 15%;
-        font-size: 1.5em;
-        background: #DE3B3F;
-        border-color: #DE3B3F;
-        color: #fff;
-        margin: 30px auto;
-        border-width: 0;
-        outline: none;
-        border-radius: 2px;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-        transition: background-color .3s;
-    }
-    .Suscripcion input[type="submit"]:hover,
-    .Suscripcion input[type="submit"]:focus {
-        background-color: #530F02;
-    }
-    .Suscripcion h2 {
-        font-size: 2em;
-        text-align: center;
-        color: #fff;
-    }
-    .Opiniones{
-        height: 560px;
-    }
+  }
+  .Suscripcion input[type="submit"]:hover, .Suscripcion input[type="submit"]:focus {
+    background-color: #530F02;
+  }
+  .Suscripcion h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+  }
+  .Opiniones  {
+    height: 560px;
+  }
+  Opiniones div i{
+    font-size: 1000px;
+  }
+  .OP1{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+  }
+  .OP2{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+  }
 }
